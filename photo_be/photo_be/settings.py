@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     'storages',
     'accounts',
     'gallery',
+    'service',
+    
 ]
 
 REST_FRAMEWORK = {
