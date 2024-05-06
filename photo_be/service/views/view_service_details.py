@@ -3,7 +3,7 @@ from service.models import Service
 from rest_framework.permissions import IsAuthenticated
 from service.serializers import service_serializer
 
-class ServiceDetails(generics.RetrieveAPIView):
+class ServiceDetails(generics.RetrieveUpdateAPIView):
     queryset = Service.objects.all()
     permission_classes = [IsAuthenticated]
     serializer_class = service_serializer.ServiceSerializer
