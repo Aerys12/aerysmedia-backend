@@ -1,0 +1,46 @@
+// User Account Endpoints
+// ----------------------
+
+// User Registration
+[x]POST /api/users/register
+
+// User Login
+[x]POST /api/users/login
+
+// User Logout
+[x]POST /api/users/logout
+
+// User Profile
+[] GET /api/users/profile
+[] PATCH /api/users/profile
+
+// User Password Reset
+[]POST /api/users/reset-password
+[]PUT /api/users/reset-password
+
+// User Account Deletion
+[]DELETE /api/users/delete
+
+//Gallery endpoints 
+// ___________________
+// Create gallery 
+[x] POST /gallery/create/
+[x] GET /gallery/gallery_id/details/
+[]  GET /gallery/gallery_id/images/
+[x] GET /gallery/list/
+[x] PATCH /gallery/Update
+[x] DELETE /gallery/Delete
+
+
+// Image Endpoints
+// ----------------
+
+// Upload Image
+[?] POST /api/images/upload
+
+// Get Image Details
+[x] GET /gallery/gallery_id/images/image_id/
+
+// Delete Image
+[x] DELETE /gallery/gallery_id/images/image_id/delete
+
