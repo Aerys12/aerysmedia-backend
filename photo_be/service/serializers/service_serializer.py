@@ -6,3 +6,8 @@ class ServiceSerializer(serializers.ModelSerializer):
         model = Service
         fields = '__all__'
         extra_kwargs = {'owner': {'read_only': True}}
+
+class SimpleServiceSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Service
+        fields = ['id', 'name'] 
